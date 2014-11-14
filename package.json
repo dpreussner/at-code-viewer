@@ -1,0 +1,35 @@
+{
+  "name": "at-code-viewer",
+  "version": "0.0.1",
+  "description": "at-code-viewer ==============",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run-script attester",
+    "start": "node node_modules/attester/bin/attester.js --predictable-urls true attester.config.yml",
+    "attester": "node node_modules/attester/bin/attester.js --phantomjs-instances 1 --phantomjs-path node_modules\\phantomjs\\lib\\phantom\\phantomjs.exe attester.config.yml",
+    "serve": "node node_modules/static-webserver/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dpreussner/at-code-viewer.git"
+  },
+  "keywords": [
+    "aria",
+    "templates"
+  ],
+  "author": "",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/dpreussner/at-code-viewer/issues"
+  },
+  "homepage": "https://github.com/dpreussner/at-code-viewer",
+  "dependencies": {
+    "ariatemplates": "1.6.7",
+    "codemirror": "4.7.0"
+  },
+  "devDependencies": {
+    "attester": "2.0.0",
+    "phantomjs": "1.9.7-5",
+    "static-webserver": "0.0.2"
+  }
+}

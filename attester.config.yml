@@ -1,0 +1,18 @@
+resources:  # Specifies which files will be accessible through the web server:
+ '/':
+  - 'src'
+  - 'test'
+ '/aria': # This configures resources for the /aria path on the server:
+  - 'node_modules/ariatemplates/src/aria'
+tests:
+# Describes test configuration for each type of test
+ aria-templates:
+  files:
+   - rootDirectory: "test"
+   - includes: "**/*Test.js"
+  bootstrap: '/aria/bootstrap.js'
+  classpaths:
+   includes:
+    - CodeViewerTest
+  debug: false
+  memCheckMode: true

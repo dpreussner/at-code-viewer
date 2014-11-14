@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AT Code Viewer Example</title>
+</head>
+<body>
+    <div id="view-container">
+    </div>
+
+    <script src="node_modules/ariatemplates/src/aria/bootstrap.js"></script>
+    <script>
+        // Update the path to the Todo module here when necessary
+        aria.core.DownloadMgr.updateRootMap({
+            js: {
+            '*': 'src/'
+            }
+        });
+        // Here be todos
+        Aria.loadTemplate({
+            div: 'view-container',
+            classpath: 'js.CodeViewer'
+        });
+    </script>
+</body>
+</html>
