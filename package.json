@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "attester": "2.0.0",
-    "phantomjs": "1.9.7-5",
+    "phantomjs": "^1.9.7-5",
     "static-webserver": "0.0.2"
   }
 }
