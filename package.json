@@ -3,10 +3,13 @@
   "version": "0.0.1",
   "description": "at-code-viewer ==============",
   "main": "index.js",
+  "config": {
+    "phantomjsInstances": 1
+  },
   "scripts": {
     "test": "npm run-script attester",
     "start": "node node_modules/attester/bin/attester.js --predictable-urls true attester.config.yml",
-    "attester": "node node_modules/attester/bin/attester.js --phantomjs-instances 1 --phantomjs-path node_modules\\phantomjs\\lib\\phantom\\phantomjs.exe attester.config.yml",
+    "attester": "node node_modules/attester/bin/attester.js attester.config.yml",
     "serve": "node node_modules/static-webserver/index.js"
   },
   "repository": {
